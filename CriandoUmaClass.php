@@ -1,15 +1,5 @@
 <?php
-
-class Pessoa{
-    public $nome;
-public $site;
-    public function falarNome(){
-        echo $this->nome; // a palavra this indica que o nome exibido é o dessa classe
-    }
-    public function falarSite(){
-        echo $this->site; // a palavra this indica que o nome exibido é o dessa classe
-    }
-}
+require_once "Pessoa.php"; // permite que a classe seja carregada uma única vez
 
 $uma_pessoa = new Pessoa;
 $uma_pessoa->nome = "Diego";
