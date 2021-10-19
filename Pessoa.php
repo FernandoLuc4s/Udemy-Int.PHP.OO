@@ -1,12 +1,17 @@
 <?php
 
 class Pessoa{
-    public $nome;
-public $site;
-    public function falarNome(){
-        echo $this->nome; // a palavra this indica que o nome exibido é o dessa classe
+    // tipos de atributos
+    // public -> pode ser acessada por qualquer classe
+    // private -> só pode ser acessada por dentro da classe
+    // protected -> só pode ser acessado pela classe e por classes que há herdam 
+    private $nome;
+   
+    public function setNome($novoNome){
+         $this->nome=$novoNome; // o metódo set é respnsável por alterar o valor do atributo sem que o usuário faça essa alteração diretamente
     }
-    public function falarSite(){
-        echo $this->site; // a palavra this indica que o nome exibido é o dessa classe
+    public function getNome(){
+        return $this->nome;
     }
+   
 }
