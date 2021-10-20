@@ -1,8 +1,6 @@
 <?php
 require_once "Pessoa.php"; // permite que a classe seja carregada uma única vez
 
-$uma_pessoa = new Pessoa;
+$pessoa = new Pessoa("Diego");
 
-$uma_pessoa->setNome("Diego");
-
-echo $uma_pessoa->getNome();
+echo $pessoa->getNome();
